@@ -24,7 +24,7 @@ public abstract class ShortIdGenerator implements IdentifierGenerator {
             .executeQuery("SELECT COUNT(id) AS idCount FROM " + tableName)
         ) {
             if (resultSet.next()) {
-                long idCount = resultSet.getLong("idCount") + 1;
+                double idCount = resultSet.getDouble("idCount") + 1;
                 return idShortener.shortenId(idCount);
             }
         } catch (SQLException e) {

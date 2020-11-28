@@ -13,8 +13,8 @@ public class IdShortener {
         };
     }
 
-    String shortenId(final long id) {
-        long idCountdown = id;
+    String shortenId(final double id) {
+        double idCountdown = id;
         StringBuilder idBuilder = new StringBuilder();
         do {
             int remainder = (int) idCountdown % possibleIdChars.length;
