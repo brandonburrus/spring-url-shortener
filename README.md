@@ -4,7 +4,7 @@ Spring app for simple url shortening
 ## Getting Started
 
 Pre-requisites:
-1. JDK >=8
+1. JDK >=11
 2. MySQL >=5
 3. Maven >=3
 
